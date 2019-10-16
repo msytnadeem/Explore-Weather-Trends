@@ -1,0 +1,3 @@
+select * from city_list where country = 'Saudi Arabia'
+select year, avg_temp as riyadh_avg_temp from city_data where city = 'Riyadh' and avg_temp is not null order by year
+select year, avg_temp as global_avg_temp from global_data  where year >= 1843 and year <= 2013 order by year
